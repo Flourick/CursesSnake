@@ -2,7 +2,7 @@
 #define GAME_H
 
 #if defined(WIN32) || defined(_WIN32)
-  #include <curses.h>
+  #include "PDCurses/curses.h"
 #else
   #include <ncurses.h>
 #endif
