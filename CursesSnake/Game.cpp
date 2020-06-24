@@ -98,12 +98,12 @@ void Game::fixedUpdate()
 {
 	snake->move();
 
-	//check out-of-bounds
+	// check out-of-bounds
 	if(!checkBounds(rown, coln, snake->getHeadRow(), snake->getHeadCol(), 1)) {
 		running = false;
 	}
 
-	//check snake crashed into himself (what an idiot...)
+	// check snake crashed into himself (what an idiot...)
 	if(checkPairInVec(snake->history, snake->getHeadRow(), snake->getHeadCol())) {
 		running = false;
 	}
